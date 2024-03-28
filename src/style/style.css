@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --baseurl: "/";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body {
+  overflow: hidden;
+}
+
+canvas {
+  width: 100vw;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+}
+
+footer a {
+  color: rgb(117, 172, 250);
+  text-decoration: none;
+}
+
+.MuiDataGrid-root {
+  color: white;
+}
+
+.MuiDataGrid-cell a {
+  color: white;
+}
+
+.MuiDataGrid-footerContainer {
+  /* height: 120px; */
+  color: white;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 1px #222;
+  background: #181818;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #333;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

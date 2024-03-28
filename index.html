@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./src/style/style.css">
+  <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+  <link href="https://fonts.cdnfonts.com/css/myriad-pro" rel="stylesheet">
+  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
+
+  <!-- For Apple Touch Icons -->
+  <link rel="apple-touch-icon" sizes="192x192" href="/logo192.png">
+
+  <!-- For Android -->
+  <link rel="icon" type="image/png" sizes="192x192" href="/logo192.png">
+  <link rel="icon" type="image/png" sizes="384x384" href="/logo384.png">
+
+  <!-- For Microsoft Edge and IE -->
+  <meta name="msapplication-TileColor" content="#ffffff">
+  <meta name="msapplication-TileImage" content="/mstile-150x150.png">
+  <meta name="theme-color" content="#ffffff">
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title> Bollygaming | Lucky Wheel </title>
+  <script>
+    document.addEventListener('contextmenu', function (e) {
+      e.preventDefault();
+    });
+    document.onkeydown = function (event) {
+      if (event.keyCode == 123) { // Prevent F12
+        return false;
+      } else if (event.ctrlKey && event.shiftKey && event.keyCode == 73) { // Prevent Ctrl+Shift+I        
+        return false;
+      } else if (event.ctrlKey && event.shiftKey && event.keyCode == 67) { // Prevent Ctrl+Shift+I        
+        return false;
+      } else if (event.keyCode === 122) { // Prevent F11
+        return false;
+      }
+    };
+
+
+  </script>
+  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+  <script type="module">
+    window.VITE_API_ASSETS_IMAGE_URL = import.meta.env.VITE_API_ASSETS_IMAGE_URL;
+    // document.documentElement.style.setProperty('--baseurl', `'${import.meta.env.VITE_API_ASSETS_IMAGE_URL}'`);
+  </script>
+  <script type="module">
+    // Use WebFontLoader to load the font asynchronously
+    WebFont.load({
+      custom: {
+        families: ["Francois One", "Myriad Pro"],
+        urls: [`${import.meta.env.VITE_API_ASSETS_ELSE_URL}font/pixifont.css`]
+
+      },
+      active: function () {
+
+      }
+    });
+  </script>
+</head>
+
+<body>
+  <div id="root" class=""></div>
+  <div id="game" class=""></div>
+  <script type="module" src="./src/main.tsx"></script>
+</body>
+
+</html>
